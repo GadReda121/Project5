@@ -1,0 +1,933 @@
+/* 
+name:Gad Reda
+Content : Courses
+Date:23/2/2022
+*/
+
+/* Start CSS Global */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #FCF3F3;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #eeeeee;
+    width: .4rem;
+    border-radius: 5px;
+}
+html::-webkit-scrollbar-track{
+    background-color: #1A1A1A;
+}
+/* End CSS Global */
+
+/*  Start CSS Codes */
+.header{
+    box-shadow: rgba(0,0,0,.1) 0px 1px 1px;
+    z-index: 999 !important;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-mob{
+    display: none;
+}
+.tools{
+    display: none;
+}
+.tools .men{
+    display: none;
+}
+.tools .menexit{
+    display: none;
+}
+.headerEffect{
+    transition: all .4s;
+    background-color: #E55252;
+}
+.headerEffect1{
+    transition: all .4s;
+    background-color: #526ae5;
+}
+.headerEffect2{
+    transition: all .4s;
+    background-color: #e5aa52;
+}
+.headerEffect3{
+    transition: all .4s;
+    background-color: #ad52e5;
+}
+.headerEffect4{
+    transition: all .4s;
+    background-color: #52e5be;
+}
+.header .logo a h1{
+    color: #1A1A1A;
+}
+.header .menu{
+    display: flex;
+    align-items: center;
+}
+.header .menu nav ul{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.header .menu nav ul li {
+    list-style:none;
+    margin-left: 40px;
+    align-self: center;
+}
+.header .menu nav ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #1A1A1A;
+    transition: all .3s;
+    display: flex;
+}
+.header .menu nav ul li a:hover{
+    color: #E55252;
+}    
+.header .menu nav ul li a img{
+    width:20px;
+    height:20px;
+    align-self: center;
+    margin-left: 5px;
+}
+.courses-detail{
+    background-color: #E55252;
+    padding: 10px;
+    width:20%;
+    line-height: 50px;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top:75px;
+    right:30%;
+    position: fixed;
+    box-shadow: rgba(0,0,0,.1) 0px 2px 6px;
+    display: none;
+    z-index: 999;
+}
+.courses-detail hr{
+    width:90%;
+    margin-left: 5%;
+    height:2px;
+    background-color: #f9f8fa;
+    border: none;
+    border-radius: 3px;
+
+}
+.courses-detail h3 a{
+    color: #f9f8fa;
+    text-align: center;
+}
+.courses-detail h3{
+    color: #f9f8fa;
+    text-align: center;
+}
+
+.Pages-detail{
+    background-color: #E55252;
+    padding: 20px;
+    width:20%;
+    line-height: 50px;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top:75px;
+    right:20%;
+    position: fixed;
+    z-index: 999;
+    box-shadow: rgba(0,0,0,.1) 0px 2px 6px;
+    display: none;
+}
+.Pages-detail hr{
+    width:90%;
+    margin-left: 5%;
+    height:2px;
+    background-color: #f9f8fa;
+    border: none;
+    border-radius: 3px;
+}
+.Pages-detail h3 a{
+    color: #f9f8fa;
+    text-align: center;
+}
+.Pages-detail h3{
+    color: #f9f8fa;
+    text-align: center;
+}
+/* End Header */
+
+/* Start Home */
+.home {
+    display: grid;
+    grid-template-columns:repeat(2,40%);
+    justify-content: space-around;
+    grid-template-rows: minmax(90vh,auto);
+}
+.home .text-home {
+    display: grid;
+    grid-row-gap: 30px;
+    align-content: center;
+}
+.home .text-home h3{
+    color: #E55252;
+    animation-name: h3-home;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: calc(1);
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-delay: .2s;
+}
+@keyframes h3-home {
+    from{transform: translateX(-100px);}
+    to{transform: translateX(0px);}
+}
+.home .text-home h1{ 
+    color: #1A1A1A;
+    font-size: 45px;
+    animation-name: h1-home;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: calc(1);
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-delay: .2s;
+}
+@keyframes h1-home {
+    from{opacity: .3;}
+    to{opacity: 1;}
+}
+.home .text-home p{
+    color: #1A1A1A;
+    animation-name: p-home;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: calc(1);
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-delay: .2s;
+}
+@keyframes p-home {
+    from{transform: translateX(100px);}
+    to{transform: translateX(0px);}
+}
+.home .text-home button{
+    padding: 10px 25px;
+    background-color: #E55252;
+    border: none;
+    border-radius: 4px;
+    color: #f9f8fa;
+    width: 30%;
+    transition: all .3s;
+    cursor: pointer;
+    animation-name: btn-home;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: calc(1);
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-delay: .2s;
+}
+@keyframes btn-home {
+    from{transform:scale(1.1,1.1)}
+    to{transform:scale(1,1)}
+}
+.home .text-home button:hover{
+    background-color: #da4848;
+    width: 40%;
+}
+.home .text-home .circles-group{
+    display: flex;
+    justify-content: space-around;
+}
+.home .text-home .circles-group .cicle1{
+    background-color: none;
+    border-radius: 50%;
+    border: 3px solid #E55252;
+    width: 20px;
+    height:20px;
+    opacity: .5;
+    margin-top: -300px;
+    animation-name: circle1;
+    animation-duration: 2s;
+    animation-delay: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes circle1 {
+    from{}
+    to{transform: scale(1.8,1.8);}
+}
+.home .text-home .circles-group .cicle2{
+    background-color: none;
+    border-radius: 50%;
+    border: 3px solid #1A1A1A;
+    width: 20px;
+    height:20px;
+    opacity: .6;
+    margin-top: -380px;
+    animation-name: circle2;
+    animation-duration: 5s;
+    animation-delay: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes circle2 {
+    from{}
+    to{transform: translateY(50px)}
+}
+.home .text-home .circles-group .cicle3{
+    background-color: none;
+    border-radius: 50%;
+    border: 3px solid #F7A1A1;
+    width: 20px;
+    height:20px;
+    opacity: .5;
+    margin-top: -250px;
+    animation-name: circle3;
+    animation-duration: 5s;
+    animation-delay: .1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes circle3 {
+    from{}
+    to{transform: translateY(50px)}
+}
+.home .text-home .circles-group .cicle4{
+    background-color: none;
+    border-radius: 50%;
+    border: 3px solid #9AEBCB;
+    width: 20px;
+    height:20px;
+    opacity: .6;
+    margin-top: -100px;
+    animation-name: circle4;
+    animation-duration: 5s;
+    animation-delay: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes circle4 {
+    from{}
+    to{transform: scale(1.5,1.5)}
+}
+.home .img-home{
+    justify-self: center;
+    align-self: center;
+}
+.home .img-home img{
+    width: 400px;
+    height:450px;
+    align-self: center;
+    border-radius: 10px 10px 200px 200px;
+    background-color: #F7A1A1;
+    padding: 10px 0px 0px 0px;
+    animation-name: img-home;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: calc(1);
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: .2s;
+}
+@keyframes img-home {
+    from{transform: scale(0.1,0.1);}
+    to{transform: scale(1,1);}
+}
+.home .theme{
+    display: grid;
+    grid-column-start: 2;
+    justify-content: right;
+}
+.home .contain-theme{
+    background-color: #FCF3F3;
+    width:20%;
+    height:80vh;
+    position: absolute;
+    top:75px;
+    right:-20%;
+    box-shadow: rgba(0,0,0,.1) 0px 0px 10px;
+    position: fixed;
+    z-index: 999;
+    padding: 20px;
+    display: none;
+}
+.home .contain-theme h2{
+    color: #1A1A1A;
+}
+.home .contain-theme p{
+    color: #1A1A1A;
+}
+.home .contain-theme hr{
+    width:70%;
+    margin-left: 15%;
+    height:1px;
+    background-color: #1A1A1A;
+    border: none;
+    border-radius: 4px;
+    margin: 15px auto;
+}
+.contain-theme .colors{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+.contain-theme .colors .color{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* 1 */
+.contain-theme .colors .color1{
+    background-color: #e55252;
+    position: relative;
+}
+.contain-theme .colors .color1 .right{
+    position: absolute;
+    top:20%;
+    left:20%;
+}
+.contain-theme .colors .color1 .right img{
+    width:25px;
+    height:25px;
+}
+/* 2 */
+.contain-theme .colors .color2{
+    background-color: #e55252;
+    position: relative;
+}
+.contain-theme .colors .color2 .right{
+    position: absolute;
+    top:20%;
+    left:20%;
+    opacity: 0;
+}
+.contain-theme .colors .color2 .right img{
+    width:25px;
+    height:25px;
+}
+/* 3 */
+.contain-theme .colors .color3{
+    background-color: #e55252;
+    position: relative;
+}
+.contain-theme .colors .color3 .right{
+    position: absolute;
+    top:20%;
+    left:20%;
+    opacity: 0;
+}
+.contain-theme .colors .color3 .right img{
+    width:25px;
+    height:25px;
+}
+/* 4 */
+.contain-theme .colors .color4{
+    background-color: #e55252;
+    position: relative;
+}
+.contain-theme .colors .color4 .right{
+    position: absolute;
+    top:20%;
+    left:20%;
+    opacity: 0;
+}
+.contain-theme .colors .color4 .right img{
+    width:25px;
+    height:25px;
+}
+/* 5 */
+.contain-theme .colors .color5{
+    background-color: #e55252;
+    position: relative;
+}
+.contain-theme .colors .color5 .right{
+    position: absolute;
+    top:20%;
+    left:20%;
+    opacity: 0;
+}
+.contain-theme .colors .color5 .right img{
+    width:25px;
+    height:25px;
+}
+.contain-theme .colors .color2{
+    background-color: #526ae5;
+}
+.contain-theme .colors .color3{
+    background-color: #e5aa52;
+}
+.contain-theme .colors .color4{
+    background-color: #ad52e5;
+}
+.contain-theme .colors .color5{
+    background-color: #52e5be;
+}
+.home .theme .setting .col{
+    width:65px;
+    height:50px;
+    background-color: #E55252;
+    padding: 8px 15px;
+    border-radius: 4px;
+    z-index: 999;
+    position: fixed;
+    cursor: pointer;
+}
+.home .theme .exit{
+    width:65px;
+    height:50px;
+    background-color: #E55252;
+    padding: 8px 15px;
+    border-radius: 4px;
+    z-index: 999;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+}
+.contain-theme .Dark-Mood{
+    display: flex;
+}
+.contain-theme .dark-mood{
+    display: flex;
+}
+.contain-theme .dark-mood .cir-dark-mood{
+    width:40px;
+    height:40px;
+    background-color: #1A1A1A;
+    border-radius: 50%;
+    box-shadow: #1A1A1A 0px 0px 2px;
+    cursor: pointer;
+} 
+.contain-theme .dark-mood .cir-dark-mood1{
+    width:40px;
+    height:40px;
+    background-color:#f9f8fa;
+    border-radius: 50%;
+    box-shadow: #1A1A1A 0px 0px 2px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+} 
+.contain-theme .dark-mood-text{
+    align-self: center;
+    display: flex;
+}
+.contain-theme .dark-mood-text p{
+    margin-left: 20px;
+}
+.contain-theme .dark-mood-text .light{
+    margin-left: 20px;
+    display: none;
+}
+.home-footer{
+    width: 70%;
+    margin-left: 15%;
+    background-color: #f9f8fa;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,.1) 0px 0px 4px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 40px auto;
+}
+.home-footer .home-child1{
+    text-align: center;
+    display: grid;
+    grid-row-gap: 15px;
+}
+.home-footer .home-child1 h1 , .home-footer .home-child1 p{
+    color: #1A1A1A;
+}
+.home-footer .home-child2{
+    text-align: center;
+    display: grid;
+    grid-row-gap: 15px;
+}
+.home-footer .home-child2 h1{
+    color: #9AEBCB;
+}
+.home-footer .home-child2 p{
+    color: #1A1A1A;
+}
+.home-footer .home-child3{
+    text-align: center;
+    display: grid;
+    grid-row-gap: 15px;
+}
+.home-footer .home-child3 h1{
+    color: #F7A1A1;
+}
+.home-footer .home-child3 p{
+    color: #1A1A1A;
+}
+.home-footer .home-child4{
+    text-align: center;
+    display: grid;
+    grid-row-gap: 15px;
+}
+.home-footer .home-child4 h1{
+    color: #F7C0A5;
+}
+.home-footer .home-child4 p{
+    color: #1A1A1A;
+}
+
+/* End Home */
+
+/* Start Courses */
+.course{
+    text-align: center;
+    margin: 10px auto 60px auto;
+}
+.course p{
+    color: #E55252;
+    font-weight: 600;
+}
+.course h1{
+    color: #1A1A1A;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-column-gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.courses .course1{
+    display: grid;
+    grid-row-gap:15px;
+}
+.courses .course1 img{
+    width:80%;
+    border-radius: 4px;
+    position: relative;
+}
+.courses .course1 h4{
+    position: absolute;
+    background-color: #E55252;
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: #f9f8fa;
+    margin: 10px;
+    font-weight: 400;
+    box-shadow: rgba(0,0,0,.1) 0px 0px 6px;
+}
+.courses .course1 .text-courses{
+    display: flex;
+}
+.courses .course1 .text-courses img{
+    width:25px;
+    height:25px;
+}
+.courses .course1 .text-courses p{
+    align-self: center;
+    margin-left: 10px;
+    color: #1A1A1A;
+}
+.courses .course1 .text2-courses{
+    display: flex;
+    align-items: center;
+}
+.courses .course1 .text2-courses img{
+    height:20px;
+    width:20px;
+}
+.courses .course1 .text2-courses p:first-child{
+    color: goldenrod;
+}
+.courses .course1 .text2-courses p:last-child{
+    color: #1A1A1A;
+}
+/* View All Courses => BTN */
+.btn-view{
+    display: grid;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.btn-view button{
+    justify-self: center;
+    padding: 10px 30px;
+    background-color: #E55252;
+    border-radius: 4px;
+    border: none;
+    box-shadow: rgba(200,0,0) 0px 0px 1px;
+    transition: all .1s;
+}
+.btn-view button:hover{
+    background-color: #da4848;
+    outline: 2px solid #fa7d7d;
+}
+.btn-view button a{
+    color:#f9f8fa;
+}
+/* End Courses */
+
+/* Start Student feedback */
+.Student{
+    text-align: center;
+}
+.Student p{
+    color: #E55252;
+    font-weight: 600;
+}
+.Student h1{
+    color: #1A1A1A;
+}
+
+section .student-parent{
+    display: grid;
+    grid-template-rows: minmax(60vh,auto);
+    margin-bottom: 50px;
+}
+section .student-parent .student1{
+    display: grid;
+    grid-template-columns: repeat(1,60%);
+    justify-content: center;
+    align-content: center;
+    grid-row-gap:20px
+}
+section .student-parent .student1 img{
+    background-color: #E55252;
+    border-radius: 50%;
+    justify-self: center;
+    border:5px solid #FCF3F3;
+    outline: 5px solid #E55252;
+    width: 200px;
+    height: 200px;
+}
+section .student-parent .student1 p{
+    color: #1A1A1A;
+    text-align: center;
+}
+section .student-parent .student1 h3{
+    color: #E55252;
+    text-align: center;
+}
+section .student-parent .student-child2{
+    display: none;
+}
+section .student-parent .student-child3{
+    display: none;
+}
+.points{
+    display: flex;
+    align-items: center;
+}
+.points .point{
+    width:15px;
+    height:15px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    border: 1px solid #da4848;
+    margin-left: 10px;
+}
+.points .active-point{
+    background-color: #F7A1A1;
+    width:20px;
+    height:20px;
+}
+section .student-parent .next-prev{
+    justify-content: center;
+    display: flex;
+}
+section .student-parent .next-prev .student-next img{
+    width:45px;
+    height:45px;
+    background-color: #F7A1A1;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 50px;
+    transition: all .3s;
+}
+section .student-parent .next-prev .student-prev img{
+    width:45px;
+    height:45px;
+    background-color: #F7A1A1;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 50px;
+    transition: all .3s;
+}
+section .student-parent .next-prev .student-next img:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+section .student-parent .next-prev .student-prev img:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+/* Circle Shap */
+.circleShap .shap-child1{
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    background-color: #E55252;
+    opacity: .5;
+    position: absolute;
+    left:20%;
+    transform: translateY(-200px);
+}
+.circleShap .shap-child2{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: #9AEBCB;
+    opacity: .5;
+    position: absolute;
+    left:60%;
+    transform: translateY(-100px);
+}
+.circleShap .shap-child3{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: #1A1A1A;
+    opacity: .5;
+    position: absolute;
+    left:70%;
+    transform: translateY(-250px);
+}
+.circleShap .shap-child4{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    background-color: #F7A1A1;
+    opacity: .5;
+    position: absolute;
+    left:80%;
+    transform: translateY(-500px);
+}
+/* Circle Shap */
+/* End Student feedback */
+
+/* Start Constructor */
+.instructor{
+    width: 60%;
+    margin-left:20%;
+    background-color: #f9f8fa;
+    border-radius: 4px;
+    box-shadow: rgba(0,0,0,.1) 0px 0px 6px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: minmax(400px,auto);
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.instructor .text-instructor{
+    display: grid;
+    grid-row-gap:20px;
+    justify-content:center;
+    align-content: center;
+}
+.instructor .text-instructor h3{
+    color: #E55252;
+}
+.instructor .text-instructor h1{
+    color: #1A1A1A;
+}
+.instructor .text-instructor button{
+    padding: 10px 35px;
+    color: #f9f8fa;
+    background-color: #E55252;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.instructor .text-instructor button:hover{
+    background-color: #da4848;
+}
+.instructor .img-instructor{
+    justify-self: center;
+}
+
+.instructor .img-instructor div img{
+    width:300px;
+    height: 370px;
+    background-color: #F7A1A1;
+    border-radius:10px 10px 50% 50%;
+    align-self: center;
+}
+/* End Constructor */
+
+/* Start Footer */
+footer{
+    width: 100%;
+    box-shadow: rgba(0,0,0,.1) 0px 0px 6px;
+    padding: 30px;
+}
+footer .parent-footer{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    justify-content: space-around;
+}
+footer .parent-footer .foot{
+    display: grid;
+    grid-row-gap: 20px;
+}
+footer .parent-footer .foot h1{
+    color: #1A1A1A;
+}
+footer .parent-footer .foot p a{
+    color: #1A1A1A;
+    transition: all .3s;
+}
+footer .parent-footer .foot p a:hover{
+    color: #da4848;
+}
+footer .parent-footer .foot p{
+    transition: all .3s;
+}
+footer .parent-footer .foot p:hover{
+    transform:translateX(10px)
+}
+footer .parent-footer .foot p a img{
+    width:20px;
+    height:20px;
+    align-self: center;
+}
+footer h3{
+    text-align: center;
+}
+
+/* End Footer */
+
+/* ANY CLASS => COLORS */
+.darkmoood{
+    background-color: #1A1A1A;
+    transition: all .5s;
+}
+.lightmoood{
+    background-color: #FCF3F3;
+    transition: all .5s;
+}
+/*  End CSS Codes */
